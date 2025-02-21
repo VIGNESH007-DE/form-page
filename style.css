@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: url('https://cosmosmagazine.com/wp-content/uploads/2020/02/180606-agriculture-full.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #2f4f4f;
+}
+.container{
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    width: 450px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+form{
+    margin: 0 2rem;
+}
+.form-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #4b8a08;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+input{
+    color: #2f4f4f;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #8b8b8b;
+    padding-left: 1.5rem;
+    font-size: 15px;
+}
+.input-group{
+    padding: 1% 0;
+    position: relative;
+}
+.input-group i{
+    position: absolute;
+    color: #4b8a08;
+}
+input:focus{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid #4b8a08;
+}
+input::placeholder{
+    color: transparent;
+}
+label{
+    color: #8b8b8b;
+    position: relative;
+    left: 1.2em;
+    top: -1.3em;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+input:focus~label, input:not(:placeholder-shown)~label{
+    top: -3em;
+    color: #4b8a08;
+    font-size: 15px;
+}
+.recover{
+    text-align: right;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.recover a{
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: bold;
+}
+.recover a:hover{
+    color: #388e3c;
+    text-decoration: underline;
+}
+button{
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background: #388e3c;
+}
+.or{
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: #2f4f4f;
+}
+.icons{
+    text-align: center;
+}
+.icons i{
+    color: #4b8a08;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #c8e6c9;
+    margin: 0 15px;
+    transition: 0.5s;
+}
+.icons i:hover{
+    background: #388e3c;
+    font-size: 1.6rem;
+    border: 2px solid #4caf50;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin-top: 0.9rem;
+    font-weight: bold;
+    color: #4b8a08;
+}
+#signUpButton, #signInButton{
+    color: #4caf50;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#signUpButton:hover, #signInButton:hover {
+    text-decoration: underline;
+    color: #388e3c;
+}
+.messageDiv{
+    background-color:hsl(327,90%,28%);
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    border-radius: 5px;
+    font-size:1rem;
+    opacity:0;
+    animation:fadeOut 7s forwards;
+}
